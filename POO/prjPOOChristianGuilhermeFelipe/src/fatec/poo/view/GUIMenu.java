@@ -35,15 +35,15 @@ public class GUIMenu extends javax.swing.JFrame {
         jMenu6 = new javax.swing.JMenu();
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu7 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        BtCadastCurso = new javax.swing.JMenuItem();
+        BtCadastTurma = new javax.swing.JMenuItem();
+        BtCadastrarInstrutor = new javax.swing.JMenuItem();
+        BtCadastrarAluno = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem7 = new javax.swing.JMenuItem();
+        BtSair = new javax.swing.JMenuItem();
         jMenu8 = new javax.swing.JMenu();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
+        BtAlocInstrutor = new javax.swing.JMenuItem();
+        BtEfeturarMatricula = new javax.swing.JMenuItem();
 
         jInternalFrame1.setVisible(true);
 
@@ -79,50 +79,68 @@ public class GUIMenu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Trabalho POO");
+        setName("FrameMenuPrincipal"); // NOI18N
 
         jMenu7.setText("Cadastros");
 
-        jMenuItem1.setText("Curso");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        BtCadastCurso.setText("Curso");
+        BtCadastCurso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                BtCadastCursoActionPerformed(evt);
             }
         });
-        jMenu7.add(jMenuItem1);
+        jMenu7.add(BtCadastCurso);
 
-        jMenuItem2.setText("Turma");
-        jMenu7.add(jMenuItem2);
-
-        jMenuItem3.setText("Instrutor");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        BtCadastTurma.setText("Turma");
+        BtCadastTurma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                BtCadastTurmaActionPerformed(evt);
             }
         });
-        jMenu7.add(jMenuItem3);
+        jMenu7.add(BtCadastTurma);
 
-        jMenuItem4.setText("Aluno");
-        jMenu7.add(jMenuItem4);
+        BtCadastrarInstrutor.setText("Instrutor");
+        BtCadastrarInstrutor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtCadastrarInstrutorActionPerformed(evt);
+            }
+        });
+        jMenu7.add(BtCadastrarInstrutor);
+
+        BtCadastrarAluno.setText("Aluno");
+        BtCadastrarAluno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtCadastrarAlunoActionPerformed(evt);
+            }
+        });
+        jMenu7.add(BtCadastrarAluno);
         jMenu7.add(jSeparator1);
 
-        jMenuItem7.setText("Sair");
-        jMenuItem7.setName("Sair"); // NOI18N
-        jMenu7.add(jMenuItem7);
+        BtSair.setText("Sair");
+        BtSair.setName("Sair"); // NOI18N
+        jMenu7.add(BtSair);
 
         jMenuBar2.add(jMenu7);
 
         jMenu8.setText("Operações");
+        jMenu8.setName("Operacoes"); // NOI18N
 
-        jMenuItem5.setText("Alocar Instrutor");
-        jMenu8.add(jMenuItem5);
-
-        jMenuItem6.setText("Efeturar Matrícula");
-        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+        BtAlocInstrutor.setText("Alocar Instrutor");
+        BtAlocInstrutor.setName("BtAlocInstrutor"); // NOI18N
+        BtAlocInstrutor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem6ActionPerformed(evt);
+                BtAlocInstrutorActionPerformed(evt);
             }
         });
-        jMenu8.add(jMenuItem6);
+        jMenu8.add(BtAlocInstrutor);
+
+        BtEfeturarMatricula.setText("Efeturar Matrícula");
+        BtEfeturarMatricula.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtEfeturarMatriculaActionPerformed(evt);
+            }
+        });
+        jMenu8.add(BtEfeturarMatricula);
 
         jMenuBar2.add(jMenu8);
 
@@ -142,17 +160,29 @@ public class GUIMenu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void BtCadastCursoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtCadastCursoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_BtCadastCursoActionPerformed
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+    private void BtCadastrarInstrutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtCadastrarInstrutorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    }//GEN-LAST:event_BtCadastrarInstrutorActionPerformed
 
-    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+    private void BtEfeturarMatriculaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtEfeturarMatriculaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem6ActionPerformed
+    }//GEN-LAST:event_BtEfeturarMatriculaActionPerformed
+
+    private void BtAlocInstrutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtAlocInstrutorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtAlocInstrutorActionPerformed
+
+    private void BtCadastTurmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtCadastTurmaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtCadastTurmaActionPerformed
+
+    private void BtCadastrarAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtCadastrarAlunoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtCadastrarAlunoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -190,6 +220,13 @@ public class GUIMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem BtAlocInstrutor;
+    private javax.swing.JMenuItem BtCadastCurso;
+    private javax.swing.JMenuItem BtCadastTurma;
+    private javax.swing.JMenuItem BtCadastrarAluno;
+    private javax.swing.JMenuItem BtCadastrarInstrutor;
+    private javax.swing.JMenuItem BtEfeturarMatricula;
+    private javax.swing.JMenuItem BtSair;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
@@ -198,13 +235,6 @@ public class GUIMenu extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu7;
     private javax.swing.JMenu jMenu8;
     private javax.swing.JMenuBar jMenuBar2;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     // End of variables declaration//GEN-END:variables
