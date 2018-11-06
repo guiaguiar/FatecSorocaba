@@ -39,13 +39,13 @@ public class GuiTurma extends javax.swing.JFrame {
         TfDataInicio = new javax.swing.JTextField();
         TfDataTermino = new javax.swing.JTextField();
         CbPeriodo = new javax.swing.JComboBox<>();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        LbPeriodo = new javax.swing.JLabel();
+        LbQtdeVagas = new javax.swing.JLabel();
+        LbNome = new javax.swing.JLabel();
+        LbSiglaTurma = new javax.swing.JLabel();
+        LBCurso = new javax.swing.JLabel();
+        LbDataInicio = new javax.swing.JLabel();
+        LbDataTermino = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(560, 232));
@@ -82,19 +82,19 @@ public class GuiTurma extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Período");
+        LbPeriodo.setText("Período");
 
-        jLabel2.setText("Qtde Vagas");
+        LbQtdeVagas.setText("Qtde Vagas");
 
-        jLabel3.setText("Nome");
+        LbNome.setText("Nome");
 
-        jLabel4.setText("Sigla da Turma");
+        LbSiglaTurma.setText("Sigla da Turma");
 
-        jLabel5.setText("Curso");
+        LBCurso.setText("Curso");
 
-        jLabel6.setText("Data Início");
+        LbDataInicio.setText("Data Início");
 
-        jLabel7.setText("Data Término");
+        LbDataTermino.setText("Data Término");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -105,11 +105,11 @@ public class GuiTurma extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6))
+                            .addComponent(LbQtdeVagas)
+                            .addComponent(LbNome)
+                            .addComponent(LbSiglaTurma)
+                            .addComponent(LBCurso)
+                            .addComponent(LbDataInicio))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(CbCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -119,11 +119,11 @@ public class GuiTurma extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(TfDataInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel7))
+                                        .addComponent(LbDataTermino))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(TfQtdeVagas, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel1)))
+                                        .addComponent(LbPeriodo)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(CbPeriodo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -147,27 +147,27 @@ public class GuiTurma extends javax.swing.JFrame {
                 .addGap(23, 23, 23)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(CbCurso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
+                    .addComponent(LBCurso))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TfSiglaTurma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
+                    .addComponent(LbSiglaTurma))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TfNomeTurma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
+                    .addComponent(LbNome))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TfQtdeVagas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(CbPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(LbPeriodo)
+                    .addComponent(LbQtdeVagas))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TfDataTermino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TfDataInicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel7))
+                    .addComponent(LbDataInicio)
+                    .addComponent(LbDataTermino))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtInserir)
@@ -235,18 +235,18 @@ public class GuiTurma extends javax.swing.JFrame {
     private javax.swing.JButton BtSair;
     private javax.swing.JComboBox<String> CbCurso;
     private javax.swing.JComboBox<String> CbPeriodo;
+    private javax.swing.JLabel LBCurso;
+    private javax.swing.JLabel LbDataInicio;
+    private javax.swing.JLabel LbDataTermino;
+    private javax.swing.JLabel LbNome;
+    private javax.swing.JLabel LbPeriodo;
+    private javax.swing.JLabel LbQtdeVagas;
+    private javax.swing.JLabel LbSiglaTurma;
     private javax.swing.JTextField TfDataInicio;
     private javax.swing.JTextField TfDataTermino;
     private javax.swing.JTextField TfNomeTurma;
     private javax.swing.JTextField TfQtdeVagas;
     private javax.swing.JTextField TfSiglaTurma;
     private javax.swing.JButton btAlterar;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     // End of variables declaration//GEN-END:variables
 }

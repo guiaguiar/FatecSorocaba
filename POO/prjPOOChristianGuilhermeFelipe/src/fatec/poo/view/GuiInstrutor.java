@@ -28,44 +28,44 @@ public class GuiInstrutor extends javax.swing.JFrame {
     private void initComponents() {
 
         TfNumero = new javax.swing.JTextField();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        LbNumero = new javax.swing.JLabel();
+        LbEstadoCivil = new javax.swing.JLabel();
         TfCEP = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
+        LbEndereco = new javax.swing.JLabel();
+        LbCEP = new javax.swing.JLabel();
         TfEndereco = new javax.swing.JTextField();
         TfTelRes = new javax.swing.JTextField();
-        jLabel16 = new javax.swing.JLabel();
+        LbTelRes = new javax.swing.JLabel();
         TfCelular = new javax.swing.JTextField();
         TfDataNascto = new javax.swing.JTextField();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        LbCelular = new javax.swing.JLabel();
+        LbDataNascto = new javax.swing.JLabel();
+        LbBairro = new javax.swing.JLabel();
         TfBairro = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
+        LbCidade = new javax.swing.JLabel();
         BtAlterar = new javax.swing.JButton();
         BtExcluir = new javax.swing.JButton();
         TfCidade = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
+        LbRG = new javax.swing.JLabel();
         BtInserir = new javax.swing.JButton();
         TfRG = new javax.swing.JTextField();
         BtSair = new javax.swing.JButton();
-        jLabel11 = new javax.swing.JLabel();
+        LbEmail = new javax.swing.JLabel();
         BtConsultar = new javax.swing.JButton();
         TfEmail = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        LbCPF = new javax.swing.JLabel();
+        LbEstado = new javax.swing.JLabel();
         TfCPF = new javax.swing.JTextField();
         CbEstado = new javax.swing.JComboBox<>();
         CbSexo = new javax.swing.JComboBox<>();
-        jLabel2 = new javax.swing.JLabel();
+        LbNome = new javax.swing.JLabel();
         TfNome = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        LbSexo = new javax.swing.JLabel();
         CbEstadoCivil = new javax.swing.JComboBox<>();
         TfFormacao = new javax.swing.JTextField();
-        jLabel13 = new javax.swing.JLabel();
+        LbFormacao = new javax.swing.JLabel();
         TfAreaDeAtuacao = new javax.swing.JTextField();
-        jLabel18 = new javax.swing.JLabel();
+        LbAreadeAtuacai = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(630, 315));
@@ -76,9 +76,9 @@ public class GuiInstrutor extends javax.swing.JFrame {
             }
         });
 
-        jLabel14.setText("Nº");
+        LbNumero.setText("Nº");
 
-        jLabel4.setText("Estado Civil");
+        LbEstadoCivil.setText("Estado Civil");
 
         TfCEP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,9 +86,9 @@ public class GuiInstrutor extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setText("Endereço");
+        LbEndereco.setText("Endereço");
 
-        jLabel15.setText("CEP");
+        LbCEP.setText("CEP");
 
         TfEndereco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,7 +102,7 @@ public class GuiInstrutor extends javax.swing.JFrame {
             }
         });
 
-        jLabel16.setText("Tel. Res");
+        LbTelRes.setText("Tel. Res");
 
         TfCelular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,11 +116,11 @@ public class GuiInstrutor extends javax.swing.JFrame {
             }
         });
 
-        jLabel17.setText("Celular");
+        LbCelular.setText("Celular");
 
-        jLabel7.setText("Data Nascto");
+        LbDataNascto.setText("Data Nascto");
 
-        jLabel8.setText("Bairro");
+        LbBairro.setText("Bairro");
 
         TfBairro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -128,7 +128,7 @@ public class GuiInstrutor extends javax.swing.JFrame {
             }
         });
 
-        jLabel9.setText("Cidade");
+        LbCidade.setText("Cidade");
 
         BtAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fatec/poo/view/icon/Alterar.png"))); // NOI18N
         BtAlterar.setText("Alterar");
@@ -142,7 +142,7 @@ public class GuiInstrutor extends javax.swing.JFrame {
             }
         });
 
-        jLabel10.setText("RG");
+        LbRG.setText("RG");
 
         BtInserir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fatec/poo/view/icon/add.png"))); // NOI18N
         BtInserir.setText("Inserir");
@@ -156,7 +156,7 @@ public class GuiInstrutor extends javax.swing.JFrame {
         BtSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fatec/poo/view/icon/exit.png"))); // NOI18N
         BtSair.setText("Sair");
 
-        jLabel11.setText("Email");
+        LbEmail.setText("Email");
 
         BtConsultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fatec/poo/view/icon/pesq.png"))); // NOI18N
         BtConsultar.setText("Consultar");
@@ -172,9 +172,9 @@ public class GuiInstrutor extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("CPF");
+        LbCPF.setText("CPF");
 
-        jLabel12.setText("Estado");
+        LbEstado.setText("Estado");
 
         TfCPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -182,7 +182,7 @@ public class GuiInstrutor extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Nome");
+        LbNome.setText("Nome");
 
         TfNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -190,7 +190,7 @@ public class GuiInstrutor extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setText("Sexo");
+        LbSexo.setText("Sexo");
 
         TfFormacao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -198,7 +198,7 @@ public class GuiInstrutor extends javax.swing.JFrame {
             }
         });
 
-        jLabel13.setText("Formação");
+        LbFormacao.setText("Formação");
 
         TfAreaDeAtuacao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -206,7 +206,7 @@ public class GuiInstrutor extends javax.swing.JFrame {
             }
         });
 
-        jLabel18.setText("Àrea de Atuação");
+        LbAreadeAtuacai.setText("Àrea de Atuação");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -216,7 +216,7 @@ public class GuiInstrutor extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(37, 37, 37)
-                        .addComponent(jLabel1)
+                        .addComponent(LbCPF)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(TfCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
@@ -224,16 +224,16 @@ public class GuiInstrutor extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(12, 12, 12)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel8)
-                                    .addComponent(jLabel10)
-                                    .addComponent(jLabel9)
-                                    .addComponent(jLabel11)))
+                                    .addComponent(LbNome)
+                                    .addComponent(LbSexo)
+                                    .addComponent(LbEndereco)
+                                    .addComponent(LbBairro)
+                                    .addComponent(LbRG)
+                                    .addComponent(LbCidade)
+                                    .addComponent(LbEmail)))
                             .addGroup(layout.createSequentialGroup()
                                 .addContainerGap()
-                                .addComponent(jLabel13)))
+                                .addComponent(LbFormacao)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(TfEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -251,7 +251,7 @@ public class GuiInstrutor extends javax.swing.JFrame {
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                     .addComponent(TfFormacao, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jLabel18)
+                                    .addComponent(LbAreadeAtuacai)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                     .addComponent(TfAreaDeAtuacao))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
@@ -264,26 +264,26 @@ public class GuiInstrutor extends javax.swing.JFrame {
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(TfCidade, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGap(18, 18, 18)
-                                            .addComponent(jLabel12)
+                                            .addComponent(LbEstado)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(CbEstado, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                .addComponent(jLabel15)
+                                                .addComponent(LbCEP)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(TfCEP, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                .addComponent(jLabel16)
+                                                .addComponent(LbTelRes)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(TfTelRes, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jLabel17)
+                                                .addComponent(LbCelular)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                                 .addComponent(TfCelular, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addGroup(layout.createSequentialGroup()
-                                            .addComponent(jLabel14)
+                                            .addComponent(LbNumero)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(TfNumero, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
@@ -293,11 +293,11 @@ public class GuiInstrutor extends javax.swing.JFrame {
                                     .addGap(74, 74, 74)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addGroup(layout.createSequentialGroup()
-                                            .addComponent(jLabel7)
+                                            .addComponent(LbDataNascto)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(TfDataNascto, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(layout.createSequentialGroup()
-                                            .addComponent(jLabel4)
+                                            .addComponent(LbEstadoCivil)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(CbEstadoCivil, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))))))))
                 .addContainerGap(38, Short.MAX_VALUE))
@@ -307,55 +307,55 @@ public class GuiInstrutor extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LbCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TfCPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LbDataNascto, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TfDataNascto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TfNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LbNome, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(CbSexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LbSexo, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(CbEstadoCivil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LbEstadoCivil, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(9, 9, 9)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TfEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LbEndereco)
+                    .addComponent(LbNumero, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TfNumero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TfBairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel15)
+                    .addComponent(LbBairro)
+                    .addComponent(LbCEP)
                     .addComponent(TfCEP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TfCidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LbCidade)
+                    .addComponent(LbTelRes, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TfTelRes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(CbEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LbEstado, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(9, 9, 9)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TfRG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LbRG)
+                    .addComponent(LbCelular, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TfCelular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TfFormacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel13)
+                    .addComponent(LbFormacao)
                     .addComponent(TfAreaDeAtuacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel18))
+                    .addComponent(LbAreadeAtuacai))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel11)
+                    .addComponent(LbEmail)
                     .addComponent(TfEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(17, 17, 17)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -474,6 +474,23 @@ public class GuiInstrutor extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> CbEstado;
     private javax.swing.JComboBox<String> CbEstadoCivil;
     private javax.swing.JComboBox<String> CbSexo;
+    private javax.swing.JLabel LbAreadeAtuacai;
+    private javax.swing.JLabel LbBairro;
+    private javax.swing.JLabel LbCEP;
+    private javax.swing.JLabel LbCPF;
+    private javax.swing.JLabel LbCelular;
+    private javax.swing.JLabel LbCidade;
+    private javax.swing.JLabel LbDataNascto;
+    private javax.swing.JLabel LbEmail;
+    private javax.swing.JLabel LbEndereco;
+    private javax.swing.JLabel LbEstado;
+    private javax.swing.JLabel LbEstadoCivil;
+    private javax.swing.JLabel LbFormacao;
+    private javax.swing.JLabel LbNome;
+    private javax.swing.JLabel LbNumero;
+    private javax.swing.JLabel LbRG;
+    private javax.swing.JLabel LbSexo;
+    private javax.swing.JLabel LbTelRes;
     private javax.swing.JTextField TfAreaDeAtuacao;
     private javax.swing.JTextField TfBairro;
     private javax.swing.JTextField TfCEP;
@@ -488,22 +505,5 @@ public class GuiInstrutor extends javax.swing.JFrame {
     private javax.swing.JTextField TfNumero;
     private javax.swing.JTextField TfRG;
     private javax.swing.JTextField TfTelRes;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }

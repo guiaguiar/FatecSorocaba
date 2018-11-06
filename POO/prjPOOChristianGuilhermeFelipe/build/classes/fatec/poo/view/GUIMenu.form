@@ -71,48 +71,48 @@
         <Property name="useNullLayout" type="boolean" value="true"/>
       </Layout>
     </Container>
-    <Menu class="javax.swing.JMenuBar" name="jMenuBar2">
+    <Menu class="javax.swing.JMenuBar" name="MenuPrincipal">
       <SubComponents>
-        <Menu class="javax.swing.JMenu" name="jMenu7">
+        <Menu class="javax.swing.JMenu" name="MenuCadastros">
           <Properties>
             <Property name="text" type="java.lang.String" value="Cadastros"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="BtCadastCurso">
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItemCadastCurso">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Curso"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtCadastCursoActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItemCadastCursoActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="BtCadastTurma">
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItemCadastTurma">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Turma"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtCadastTurmaActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItemCadastTurmaActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="BtCadastrarInstrutor">
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItemCadastrarInstrutor">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Instrutor"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtCadastrarInstrutorActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItemCadastrarInstrutorActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="BtCadastrarAluno">
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItemCadastrarAluno">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Aluno"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtCadastrarAlunoActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItemCadastrarAlunoActionPerformed"/>
               </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="BtSair">
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItemSair">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Sair"/>
                 <Property name="name" type="java.lang.String" value="Sair" noResource="true"/>
@@ -120,27 +120,27 @@
             </MenuItem>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu8">
+        <Menu class="javax.swing.JMenu" name="MenuOperacoes">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opera&#xe7;&#xf5;es"/>
             <Property name="name" type="java.lang.String" value="Operacoes" noResource="true"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="BtAlocInstrutor">
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItemAlocInstrutor">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Alocar Instrutor"/>
-                <Property name="name" type="java.lang.String" value="BtAlocInstrutor" noResource="true"/>
+                <Property name="name" type="java.lang.String" value="MenuItemAlocInstrutor" noResource="true"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtAlocInstrutorActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItemAlocInstrutorActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="BtEfeturarMatricula">
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItemEfeturarMatricula">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Efeturar Matr&#xed;cula"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtEfeturarMatriculaActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItemEfeturarMatriculaActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
@@ -154,7 +154,7 @@
     <Property name="name" type="java.lang.String" value="FrameMenuPrincipal" noResource="true"/>
   </Properties>
   <SyntheticProperties>
-    <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar2"/>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="MenuPrincipal"/>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
