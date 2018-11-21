@@ -1,13 +1,21 @@
 package fatec.poo.model;
 import java.util.ArrayList;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Instrutor extends Pessoa{
+	@Id
     private String formacao;
     private String areaAtuacao;
     private ArrayList <Turma> turmas;
     
     public Instrutor(String nome, String cpf) {
         super(nome, cpf);
+    }
+    
+    public Instrutor() {
     }
 
     public void setFormacao(String formacao) {

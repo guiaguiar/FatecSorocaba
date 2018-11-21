@@ -1,6 +1,11 @@
 package fatec.poo.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Matricula {
+	@Id
     private String data;
     private int qtdeFaltas;
     private double nota;
@@ -11,6 +16,9 @@ public class Matricula {
 
     public Matricula(String Data) {
         this.data = Data;
+    }
+    
+    public Matricula() {
     }
     
     public void setAluno(Aluno aluno){

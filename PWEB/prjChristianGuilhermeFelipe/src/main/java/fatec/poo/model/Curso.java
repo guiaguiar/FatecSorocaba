@@ -1,7 +1,12 @@
 package fatec.poo.model;
 import java.util.ArrayList;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Curso {
+	@Id
     private String sigla;
     private String nome;
     private int cargaHoraria;
@@ -15,6 +20,10 @@ public class Curso {
         this.sigla = sigla;
         this.nome = nome;
     }
+    
+    public Curso() {
+    }
+    
 
     public void setCargaHoraria(int cargaHoraria) {
         this.cargaHoraria = cargaHoraria;

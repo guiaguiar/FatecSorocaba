@@ -1,1 +1,4 @@
 github.com/ChrisCorrales/FatecSorocaba
+
+Guilherme Aguiar
+Christian Corrales

@@ -1,7 +1,12 @@
 package fatec.poo.model;
 import java.util.ArrayList;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Turma {
+	@Id
     private String siglaTurma;
     private String descricao;
     private String dataInicio;
@@ -16,6 +21,9 @@ public class Turma {
     public Turma(String siglaTurma, String descricao) {
         this.siglaTurma = siglaTurma;
         this.descricao = descricao;
+    }
+    
+    public Turma() {
     }
 
     public void setDescricao(String descricao) {

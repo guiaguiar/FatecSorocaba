@@ -1,6 +1,11 @@
 package fatec.poo.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class APrazo {
+	@Id
     private double valor;
     private String dtVencimento;
     private double taxaJuros;
