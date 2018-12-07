@@ -10,7 +10,7 @@ CREATE TABLE Pessoa (	CPF varchar2(17),
 			Telefone    varchar2(15),
 			Celular     varchar2(15),
 			Sexo        varchar2(1)        CHECK (Sexo IN ('M','F')),
-			EstadoCivil varchar2(10),
+			EstadoCivil varchar2(15),
 			RG          varchar2(15)       NOT NULL,
 			Email       varchar2(40)       UNIQUE,
 			CONSTRAINT pk_CPF PRIMARY KEY(CPF)	);
@@ -93,24 +93,25 @@ ALTER TABLE Turma ADD (	CONSTRAINT fk_CPFInstrutorTurma FOREIGN KEY (CPFInstruto
 ALTER TABLE Turma ADD (	CONSTRAINT fk_SiglaCursoTurma FOREIGN KEY (SiglaCurso)
 				REFERENCES Curso (SiglaCurso) ON DELETE CASCADE);
                 
-INSERT INTO Pessoa VALUES('163.088.136-80','Leonardo Bernardo Moreira','07/03/1996','Rua G','981','Jardim Primavera',
+INSERT INTO Pessoa VALUES('16308813680','Leonardo Bernardo Moreira','07/03/1996','Rua G','981','Jardim Primavera',
                         'Coronel Fabriciano','MG','35172-318','(31) 2736-7401','(31) 99100-7683',
-                        'M','Solteiro','46.415.765-1','lleonardobernardo@hotmail.com');
-                        
-INSERT INTO Pessoa VALUES('157.302.978-58','Marina Joana Rodrigues','24/06/1996','Rua Rúbens Nazaré Santos','681','Vila Rica',
+                        'M','Solteiro(a)','46.415.765-1','lleonardobernardo@hotmail.com');
+INSERT INTO Aluno VALUES('15730297858','Ensino Médio Completo');
+
+INSERT INTO Pessoa VALUES('15730297858','Marina Joana Rodrigues','24/06/1996','Rua Rúbens Nazaré Santos','681','Vila Rica',
                         'Sorocaba','SP','18052-340','(15) 3672-1465','(15) 98386-3152',
-                        'F','Divorciada','10.764.735-7','marinajoana@mv1.com');
+                        'F','Divorciado(a)','10.764.735-7','marinajoana@mv1.com');
+INSERT INTO Aluno VALUES('15730297858','Ensino Médio Incompleto');
                         
-INSERT INTO Pessoa VALUES('151.839.458-29','Letícia Antônia Malu Nunes','20/08/1997','Rua Sessenta','538','Parque São Bento',
+INSERT INTO Pessoa VALUES('15183945829','Letícia Antônia Malu Nunes','20/08/1997','Rua Sessenta','538','Parque São Bento',
                         'Sorocaba','SP','18072-670','(15) 3896-1759','(15) 99239-1779',
-                        'F','Solteiro','38.321.165-7','antoniamalununes@molsa.com');
+                        'F','Solteiro(a)','38.321.165-7','antoniamalununes@molsa.com');
                         
-INSERT INTO Pessoa VALUES('887.642.918-20','Emanuel Isaac Assis','12/02/1994','Rua Bom Retiro','789','Canudos',
+INSERT INTO Pessoa VALUES('88764291820','Emanuel Isaac Assis','12/02/1994','Rua Bom Retiro','789','Canudos',
                         'São Paulo','SP','35172-318','(11) 2954-2313','(11) 99252-2888',
-                        'M','Casado','18.810.324-7','emanuelassis-78@lav.com.br');
+                        'M','Casado(a)','18.810.324-7','emanuelassis-78@lav.com.br');
                         
-INSERT INTO Pessoa VALUES('223.634.228-48','Eduarda Isabela Porto','24/09/1994','Rua Texas','977','Jardim América',
+INSERT INTO Pessoa VALUES('22363422848','Eduarda Isabela Porto','24/09/1994','Rua Texas','977','Jardim América',
                         'Sorocaba','SP','18046-740','(15) 3723-9000','(15) 99145-7482',
-                        'F','Solteiro','47.008.038-3','EduPorto74@hotmail.com');
-                        
-INSERT INTO Aluno VALUES('157.302.978-58','Ensino Médio Completo');
+                        'F','Viúvo(a)','47.008.038-3','EduPorto74@hotmail.com');
+                    

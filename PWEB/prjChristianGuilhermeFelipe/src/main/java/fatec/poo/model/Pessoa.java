@@ -2,7 +2,10 @@ package fatec.poo.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 
+@Inheritance(strategy=InheritanceType.JOINED)
 @Entity
 public class Pessoa {
 	@Id

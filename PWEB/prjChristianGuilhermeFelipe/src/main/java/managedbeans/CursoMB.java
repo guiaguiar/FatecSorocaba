@@ -2,14 +2,10 @@ package managedbeans;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 
 import fatec.poo.model.Curso;
 import service.CursoService;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @ManagedBean
@@ -23,6 +19,10 @@ public class CursoMB {
 		cursoService.closeEntityManager();
 		curso = new Curso();
 	}
+	
+	public void excluir() {
+		cursoService.remove(curso);
+	}
 
 	public List<Curso> getCursos() {
 		List <Curso> lista;
@@ -31,7 +31,6 @@ public class CursoMB {
 		return lista;
 	}
 
-	
 	public Curso getCurso() {
 		return curso;
 	}

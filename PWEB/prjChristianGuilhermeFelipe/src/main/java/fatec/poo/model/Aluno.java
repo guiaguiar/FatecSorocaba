@@ -1,12 +1,10 @@
 package fatec.poo.model;
 
 import javax.persistence.Entity;
-import javax.persistence.Id;
 
 @Entity
 public class Aluno extends Pessoa{
 	
-	@Id
     private String escolaridade;
     private Matricula matricula;
 

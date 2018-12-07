@@ -66,6 +66,7 @@ public class GuiAluno extends javax.swing.JFrame {
         FtfTelRes = new javax.swing.JFormattedTextField();
         FtfCelular = new javax.swing.JFormattedTextField();
         FtfCEP = new javax.swing.JFormattedTextField();
+        LbResposta = new javax.swing.JLabel();
 
         setTitle("Cadastrar Aluno");
         setName("FrameCadastrarAluno"); // NOI18N
@@ -133,7 +134,7 @@ public class GuiAluno extends javax.swing.JFrame {
 
         LbSexo.setText("Sexo");
 
-        CbEstadoCivil.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Solteiro", "Casado", "Divorciado" }));
+        CbEstadoCivil.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Solteiro(a)", "Casado(a)", "Divorciado(a)", "Viúvo(a)" }));
         CbEstadoCivil.setSelectedIndex(-1);
         CbEstadoCivil.setEnabled(false);
 
@@ -145,9 +146,14 @@ public class GuiAluno extends javax.swing.JFrame {
 
         LbEscolaridade.setText("Escolaridade");
 
-        CbEscolaridade.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ensino Médio", "Graduação", "Mestrado" }));
+        CbEscolaridade.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ensino Fundamental Incompleto", "Ensino Fundamental Cursando", "Ensino Fundamental Completo", "Ensino Médio Incompleto", "Ensino Médio Cursando", "Ensino Médio Completo", "Ensino Superior Incompleto", "Ensino Superior Cursando", "Ensino Superior Completo" }));
         CbEscolaridade.setSelectedIndex(-1);
         CbEscolaridade.setEnabled(false);
+        CbEscolaridade.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CbEscolaridadeActionPerformed(evt);
+            }
+        });
 
         LbDataNascto.setText("Data Nascto");
 
@@ -308,7 +314,9 @@ public class GuiAluno extends javax.swing.JFrame {
                         .addGap(27, 27, 27)
                         .addComponent(LbCPF)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(FtfCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(FtfCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(LbResposta)))
                 .addContainerGap(30, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -317,7 +325,8 @@ public class GuiAluno extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(LbCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(FtfCPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(FtfCPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LbResposta))
                 .addGap(7, 7, 7)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(LbDataNascto, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -408,7 +417,9 @@ public class GuiAluno extends javax.swing.JFrame {
 
     private void BtConsultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtConsultarActionPerformed
         aluno = null;
+        System.out.println(aluno.ValidarCPF(FtfCPF.getText()));
         aluno = daoAluno.consultar(FtfCPF.getText());
+        LbResposta.setText("CPF Inválido");
         if (aluno == null) {
             FtfCPF.setEnabled(false);
             CbSexo.setEnabled(true);
@@ -654,6 +665,10 @@ public class GuiAluno extends javax.swing.JFrame {
         conexao.fecharConexao();
     }//GEN-LAST:event_formWindowClosing
 
+    private void CbEscolaridadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CbEscolaridadeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CbEscolaridadeActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -719,6 +734,7 @@ public class GuiAluno extends javax.swing.JFrame {
     private javax.swing.JLabel LbNome;
     private javax.swing.JLabel LbNumero;
     private javax.swing.JLabel LbRG;
+    private javax.swing.JLabel LbResposta;
     private javax.swing.JLabel LbSexo;
     private javax.swing.JLabel LbTelRes;
     private javax.swing.JTextField TfBairro;

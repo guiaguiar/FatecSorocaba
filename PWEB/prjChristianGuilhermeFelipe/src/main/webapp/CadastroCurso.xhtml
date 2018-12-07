@@ -14,34 +14,32 @@
 	<ui:define name="principal">
 		<h1>Cadastro de Cursos</h1>
 		<h:form id="formCurso">
-			<p:panelGrid columns="2">
 				<p:outputLabel value="Sigla" />
-				<p:inputText value="#{cursoMB.curso.sigla}" />
+				<p:inputText value="#{cursoMB.curso.sigla}" /><br></br>
 
 				<p:outputLabel value="Nome" />
-				<p:inputText value="#{cursoMB.curso.nome}" />
+				<p:inputText value="#{cursoMB.curso.nome}" /><br></br>
 				
-				<p:outputLabel value="cargaHoraria" />
-				<p:inputText value="#{cursoMB.curso.cargaHoraria}" />
+				<p:outputLabel value="Carga Horária" />
+				<p:inputText value="#{cursoMB.curso.cargaHoraria}" /><br></br>
 				
 				<p:outputLabel value="Valor" />
-				<p:inputText value="#{cursoMB.curso.valor}" />
+				<p:inputText value="#{cursoMB.curso.valor}" /><br></br>
 				
-				<p:outputLabel value="dataVigencia" />
-				<p:inputText value="#{cursoMB.curso.dataVigencia}" />
+				<p:outputLabel value="Data Vigencia" />
+				<p:inputText value="#{cursoMB.curso.dataVigencia}" /><br></br>
 				
-				<p:outputLabel value="valorHoraInstrutor" />
-				<p:inputText value="#{cursoMB.curso.valorHoraInstrutor}" />
+				<p:outputLabel value="Valor da Hora - Instrutor" />
+				<p:inputText value="#{cursoMB.curso.valorHoraInstrutor}" /><br></br>
 				
-				<p:outputLabel value="programa" />
-				<p:inputText value="#{cursoMB.curso.programa}" />
+				<p:outputLabel value="Programação" />
+				<p:inputText value="#{cursoMB.curso.programa}" /><br></br>
 				
-			</p:panelGrid>
 
-			<p:commandButton value="Salvar" action="#{cursoMB.salvar()}"
+			<p:commandButton value="Cadastrar" action="#{cursoMB.salvar}"
 				update=":formCurso" />
 
-			<p:dataTable value="#{cursoMB.produtos}" var="aux">
+			<p:dataTable value="#{cursoMB.cursos}" var="aux">
 				<p:column headerText="Sigla">
 					<p:outputLabel value="#{aux.sigla}"></p:outputLabel>
 				</p:column>
@@ -54,13 +52,13 @@
 				<p:column headerText="Valor">
 					<p:outputLabel value="#{aux.valor}"></p:outputLabel>
 				</p:column>
-				<p:column headerText="dataVigencia">
+				<p:column headerText="DataVigencia">
 					<p:outputLabel value="#{aux.dataVigencia}"></p:outputLabel>
 				</p:column>
-				<p:column headerText="valorHoraInstrutor">
+				<p:column headerText="ValorHoraInstrutor">
 					<p:outputLabel value="#{aux.valorHoraInstrutor}"></p:outputLabel>
 				</p:column>
-				<p:column headerText="programa">
+				<p:column headerText="Programa">
 					<p:outputLabel value="#{aux.programa}"></p:outputLabel>
 				</p:column>
 			</p:dataTable>

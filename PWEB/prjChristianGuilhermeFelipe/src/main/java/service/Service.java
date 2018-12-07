@@ -15,7 +15,7 @@ public abstract class Service <T, I extends Serializable> {
     
      public Service() {
     	
-    	emf = Persistence.createEntityManagerFactory("PrCadastroProduto");
+    	emf = Persistence.createEntityManagerFactory("PrjChristianGuilhermeFelipe");
 
 	}
 
